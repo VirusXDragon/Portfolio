@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mijn portfolio</title>
+    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="../images/logo2.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="hobby.html">Hobby</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+
+    </section>
+    <!-------------- about me ------------->
+    <section class="about-us">
+        <div class="about- row">
+            <div class="about-col">
+                <h1>Who am I</h1>
+                <p>
+                    Hello I'm Abbas Berri I'm 20 years old. I currently am studying Software Developer at ROC Friese
+                    Poort MBO 4. I live with my parents. We came back to the Netherlands 5 years ago. I was born in the
+                    Netherlands. We left when i was 3 years old to Denmark with my parents. Then after spending 3 years
+                    in Denmark we left and went to my parents homeland Libanon. I lived and studied in Libanon till my
+                    14th almost 15th, we Left Libanon and came back to the Netherlands. After living in the Netherlands
+                    for a while i picked up some hobbies.
+                </p>
+
+                <a href="hobby.html" class="hero-btn red-btn">Find out More</a>
+
+            </div>
+            <div class="about-col">
+                <img src="../images/wallpaper2.jpg" </div> </div> </section> <!-----JavaScript for Toggle Menu------>
+                <script>
+                    var navLinks = document.getElementById("navLinks");
+
+                    function showMenu() {
+                        navLinks.style.right = "0px";
+                    }
+
+                    function hideMenu() {
+                        navLinks.style.right = "-300px";
+                    }
+                </script>
+</body>
+
+</html>
